@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+ 
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  background-color: black;
+  background-image: url(../img/fondo-tecnologia-tierra-diagrama-circuito_1017-19385.jpg);
+   background-size: 100% ;
+}
+
+header{
+  width: 100%;
+  background: darkred;
+}
+
+header label{
+  display: none;
+  width:30px;
+  height: 30px;
+  padding: 10px;
+  border-right: 1px solid #fff;
+}
+
+header label:hover{
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.menu ul{
+  margin: 0;
+  list-style: none;
+  padding:0;
+  display:flex;
+
+}
+.menu li{
+  border-right: 1px solid #fff;
+
+}
+
+
+.menu li:hover{
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+
+.menu li a{
+  display:block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width:768px){
+  header label{
+    display:block;
+  }
+    .menu{
+      position: absolute;
+      background:darkred;
+      width: 70%;
+      margin-left: -70%;
+      transition: all 0.5s;
+  
+    
+    }
+    .menu ul{
+      flex-direction: column;
+    }
+  }
+  .menu li{
+    border-top:1px solid white;
+  }
+#btn-menu:checked ~ .menu{
+  margin:0;
+}
+
+}
+#contenedor {
+  width: 100%;
+  height: 100%;
+  
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#encabezado {
+
+  width: 100%;
+  height: 150px;
+   background-image: url(../img/space-tunnel-wallpapers_8344_1366x768.jpg);
+   background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.active {
+  color: red;
+  background-color:darkblue;
+}
+.titulo1 {
+  font-family: 'Segoe UI';
+  color: white;
+  font-weight: lighter;
+  font-size: 50px;
+  
+}
+.titulo2 {
+  color: white;
+  font-family:'Segoe UI';
+  font-weight: lighter;
+  font-size: 50px;
+}
+.justificada {
+  text-align: justify;
+}
+.parrafo1 {
+  color:white;
+  font-family: 'Segoe UI';
+  font-size: 30px;
+  text-align-last: center;
+  font-weight: lighter;
+}
+.parrafo2 {
+  font-size: 15px;
+  display: table;
+}
+#cuerpo {
+  width: 90%;
+  height: 100%;
+  color: white;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: table;
+}
+#pie {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  padding-top:10px;
+  color: white;
+  background-color: black;
+  
+}
+.caja-texto {
+  width: 250px;
+  border-radius: 5px;
+  height: 25px;
+  padding-left: 5px;
+}
+
+.text-area {
+  width: 250px;
+  border-radius: 5px;
+  height: 25px;
+  padding-left: 5px;
+  height: 150px;
+}
+
+
+#izquierda {
+  width: 50%;
+  float: left;
+  display: table;
+}
+#derecha {
+  width: 50%;
+  height: 300px;
+  float: left;
+  display: table;
+}
+.centrada {
+  text-align: center;
+}
+
+#btn-menu {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #encabezado label {
+    display: block;
+  }
+
+  #btn-menu:checked ~ #navegacion {
+    margin: 0;
+  }
+.socialmedia{
+    margin-top: 24px;
+    display: flex;
+    color: var(--black2);
+}
+
+.socialmedia__icon{
+    font-size: 20px;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.socialmedia__legend{
+    color: var(--black2);
+    margin-right: 16px;
+}
+
+  }
